@@ -1,0 +1,15 @@
+{
+    "name": "movie-vote",
+    "version": "1.0.0",
+    "description": "Un tutoriel pour apprendre à créer une application web3 avec Node.js",
+    "license": "MIT",
+    "main": "truffle-config.js",
+    "scripts": {
+        "dev": "lite-server",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@truffle/hdwallet-provider": "^2.0.3",
+        "lite-server": "^2.6.1"
+    }
+}
