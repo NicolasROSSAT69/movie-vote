@@ -2,14 +2,64 @@
 
 Smart contract Blockchain ETH
 
-## Installation
+# Documentation Smart Contract
+
+La documentation de notre smart contract se trouve dans DocumentationVoting.md
+
+## Production
+
+Adresse du contrat sur le réseaux de test Ropsten : 
+```
+0xD694d42775C24CA0393247347e3fD9103E12B3D3
+```
 
 ### Smart contract
-- Lancer Ganache
-- Ensuite lancer les commandes suivantes:
-- truffle compile
-- truffle migrate
+
+Pour publier le smart contract sur la blockchain de test ETH (Ropsten) il faut executer ces lignes de commande:
+
+- truffle dashboard
+
+Une fois le dashboard ouvert il faut connecter son wallet ropsten, il faut ajouter le code ci-dessous dans le fichier de config de truffle.
+
+```js
+module.exports = {
+  // ... le reste de la config truffle
+
+  dashboard: {
+    port: 24012,
+  }
+
+  networks: {
+    // ... Les configurations du réseau, y compris le réseau nommé 'dashboard'
+  }
+}
+```
+
+Pour publier le contract :
+
+```
+truffle migrate --network dashboard
+```
+
+Il faut ensuite penser à valider la transaction sur le dashboard truffle.
+
+## Developpement
+
+### Smart contract locale
+
+Pour publier le smart contract sur la blockchain local (Ganache) il faut lancer Ganache et exécuter ces lignes de commande:
+
+```
+truffle migrate --network development
+```
 
 ### Application web 3 front
-- yarn install
-- yarn dev
+
+Pour lancer le front il faut executer ces lignes de commande :
+```
+yarn install
+```
+
+```
+yarn dev
+```
