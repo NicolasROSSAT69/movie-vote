@@ -8,9 +8,9 @@ La documentation de notre smart contract se trouve dans DocumentationVoting.md
 
 ## Production
 
-Adresse du contrat sur le réseaux de test Ropsten : 
+Adresse du contrat sur le réseaux de test Ropsten :
 ```
-0xD694d42775C24CA0393247347e3fD9103E12B3D3
+0x6c0F049A549e577BEABe1419c5117f74Fd59333a
 ```
 
 ### Smart contract
