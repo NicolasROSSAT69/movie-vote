@@ -17,7 +17,9 @@ Adresse du contrat sur le réseaux de test Ropsten :
 
 Pour publier le smart contract sur la blockchain de test ETH (Ropsten) il faut executer ces lignes de commande:
 
-- truffle dashboard
+```
+truffle dashboard
+```
 
 Une fois le dashboard ouvert il faut connecter son wallet ropsten, il faut ajouter le code ci-dessous dans le fichier de config de truffle.
 
