@@ -37,7 +37,7 @@ App = {
                 // Request account access
                 await window.ethereum.request({ method: 'eth_requestAccounts' });
             } catch (error) {
-                console.error('User denied account access');
+                console.error("Accès au compte refusé à l'utilisateur");
             }
         } else if (window.web3) {
             // Look out for injected web3.js
@@ -84,7 +84,7 @@ App = {
         }).on('error', console.error);
 
         instance.NewMovie({ fromBlock: 0 }).on('data', function (event) {
-            console.log("new movie added");
+            console.log("Film ajouté");
         }).on('error', console.error);
     },
 
@@ -124,7 +124,7 @@ App = {
 
         App.contracts.Voting.deployed().then(function (instance) {
             instance.vote(movieID, { from: App.account }).then(function (address) {
-                console.log(`Successfully voted on ${movieID}`, address);
+                console.log(`Vote réussi sur ${movieID}`, address);
             }).catch(function (err) {
                 console.error(err);
             });
@@ -142,7 +142,7 @@ App = {
 
         App.contracts.Voting.deployed().then(function (instance) {
             instance.addMovie(title, cover, { from: App.account }).then(function () {
-                console.log(`Successfully added movie ${title}`);
+                console.log(`Le film a été ajouté avec succès ${title}`);
                 event.target.reset();
             }).catch(function (err) {
                 console.error(err);
