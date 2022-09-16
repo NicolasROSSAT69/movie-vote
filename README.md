@@ -8,20 +8,20 @@ La documentation de notre smart contract se trouve dans DocumentationVoting.md
 
 ## Production
 
-Adresse du contrat sur le réseaux de test Ropsten :
+Adresse du smart contrat sur le réseaux de test Goerli : ([Lien Etherscan Goerli](https://goerli.etherscan.io/address/0x286c704e4C4Bd3d6D924eEC8Ebff0b86Bbe343f1#code))
 ```
-0x6c0F049A549e577BEABe1419c5117f74Fd59333a
+0x286c704e4C4Bd3d6D924eEC8Ebff0b86Bbe343f1
 ```
 
 ### Smart contract
 
-Pour publier le smart contract sur la blockchain de test ETH (Ropsten) il faut executer ces lignes de commande:
+Pour publier le smart contract sur la blockchain de test ETH (Goerli) il faut executer ces lignes de commande:
 
 ```
 truffle dashboard
 ```
 
-Une fois le dashboard ouvert il faut connecter son wallet ropsten, il faut ajouter le code ci-dessous dans le fichier de config de truffle.
+Une fois le dashboard ouvert il faut connecter son wallet Goerli, il faut ajouter le code ci-dessous dans le fichier de config de truffle.
 
 ```js
 module.exports = {
