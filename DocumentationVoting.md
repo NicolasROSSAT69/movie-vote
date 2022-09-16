@@ -4,8 +4,8 @@ Le smart contract est déployé sur la blockchain de test ETH (Goerli Testnet Ne
 
 ## Adresse du smart contract:
 
-[Etherscan Goerli](https://goerli.etherscan.io/address/0x286c704e4C4Bd3d6D924eEC8Ebff0b86Bbe343f1#code)
+[Etherscan Goerli](https://goerli.etherscan.io/address/0x544E1AA75BC1F21458b3e7780Cea7F3A8b446fA9)
 
 ```
-0x286c704e4C4Bd3d6D924eEC8Ebff0b86Bbe343f1
+0x544E1AA75BC1F21458b3e7780Cea7F3A8b446fA9
 ```
